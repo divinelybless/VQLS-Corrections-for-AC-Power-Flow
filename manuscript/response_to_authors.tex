@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}\usepackage[T1]{fontenc}\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,tabularx,xcolor}
+\usepackage[colorlinks=true,allcolors=blue!50!black]{hyperref}
+\title{Point-by-Point Response to the Authors' Internal Review\\[2mm]\large Reconstructed VQLS Corrections for AC Power Flow}
+\author{Revision record for author approval}
+\date{2 November 2026}
+\begin{document}\maketitle
+\noindent The revised manuscript is a fixed-seed, single-step \emph{negative feasibility benchmark}. The current changes explain the recorded simulation rather than substituting hypothetical Qiskit results. ``Addressed'' below means the manuscript wording or computational diagnostic has been revised; it does not mean hardware validation or third-party auditing was performed.
+
+\section*{Primary technical points}
+\begin{enumerate}
+\item \textbf{Sampling model: addressed at the level of executable probability distributions and compatible circuit primitives.} The revised Section 3 explicitly specifies the complex-Pauli importance distribution $|c_\ell|/\Gamma_M$, the ideal Hadamard-test outcome $Z_a=\Gamma_M H_\ell$, and an independently sampled denominator $Z_D=\Gamma_K\operatorname{sgn}(d_j)Q_j$ from a \emph{separately decomposed} $K=M^\dagger M$. It gives the exact expectation and per-outcome variances $\Gamma_M^2-a^2$ and $\Gamma_K^2-D^2$. The real-Jacobian odd-$Y$ coefficients are retained by conditional phase adjustment. The numerator uses 200 / 864 nonzero terms and the denominator 136 / 528 on the two networks. A supplementary numerical check agrees with the predicted means and variances. The conditional circuit is a specification, not an executed Qiskit implementation; state preparation, controlled operations and measurement latency remain uncosted.
+
+\item \textbf{Signed amplitude reconstruction: addressed.} The coherent branch state $(|0\rangle|i\rangle+|1\rangle|v\rangle)/\sqrt2$ and ancilla-$X$ measurement yield the \emph{signed} $v_i$, rather than computational-basis probabilities $|v_i|^2$. The same controlled-preparation phase convention must be applied to the signed numerator overlap. The archive samples each physical coordinate independently from $\operatorname{Binomial}(N_i,(1+v_i)/2)$; there is no renormalization, no measurement of padded coordinates and no statevector-sign copy into reconstructed outputs. Holdout returns undefined for $\widehat D\le0$; a prospective safe-abstention policy is now distinguished from the archived behaviour. All 24 archived holdouts reported a positive denominator confidence-lower-bound flag. A realized controlled-preparation circuit remains to be tested.
+
+\item \textbf{Floating preconditioner: corrected.} The theorem treats $B_0=\operatorname{fl}(J(\widehat x)^{-1})$ as the exact matrix of stored binary numbers and validates $I-B_0J$ using directed arithmetic. It is \emph{not} required to enclose the exact inverse. Classical inversion and its cost remain explicitly disclosed.
+
+\item \textbf{Runtime conclusion: narrowed.} The revised text states that classical factorization is not avoided in \emph{this} measured workflow, while a universal impossibility claim is not supported because candidate quality, number of nonlinear steps, certification calls and hardware runtimes differ across methods. The 1 ns/outcome illustration is explicitly unrealistically favourable to quantum devices.
+
+\item \textbf{Checker independence: documented.} A new table lists the shared data, candidate states and preconditioner on one hand, and separately implemented decimal parsing, interval arithmetic, trigonometric enclosures, Jacobian/inclusion code and IEEE 9-bus constraint checks on the other. Agreement of positive inclusions is distinguished from negative sufficient-test flags. This is not external third-party code review.
+\end{enumerate}
+
+\section*{Experimental and presentation points}
+\begin{enumerate}\setcounter{enumi}{5}
+\item \textbf{Scope and comparators: clarified.} The study comprises one sampled VQLS correction from each fixed warm start, exact undamped one-step Newton, a deliberately damped LU \emph{diagnostic}, and fully converged Newton. The damped LU is not called cost- or accuracy-matched. For the archived 24 quantum cases, the VQLS residual exceeded $\|b\|_\infty$ zero times; thus the specified damping ratio did not clip the residual target. The mixed-angle/voltage coordinates of the reported $\ell_\infty$ state distance are explicitly identified.
+
+\item \textbf{Observed counts and radius geometry: improved.} All 24 individual trials appear in the new figure and geometry CSV. Three 9-bus base trials have positive root inclusions, three 14-bus base trials have a numerical reference root inside the largest tested box but no inclusion, and 18 stressed trials have the \emph{numerical reference root} outside the largest test box. The last category does not rule out a different nonlinear root. All fractions are observed counts, not empirical population success probabilities.
+
+\item \textbf{Mathematical precision: improved.} The root-enclosure statement uses $\forall p\in\mathcal P,\exists! x_p^*\in\mathcal X$ with a differentiability neighbourhood assumption. The direct-centre constraint allowance is defined, and the standard nature of the Krawczyk argument remains explicit. Native security is claimed only for small-uncertainty IEEE 9-bus base cases; IEEE 14-bus is a root-inclusion test only.
+
+\item \textbf{Reproducibility and presentation: improved but not complete.} The package contains the code-defined benchmark inputs, scenarios and outages, fixed-seed records, all-seed diagnostic CSV, probability-sampler tests, results and a claim manifest. The figure no longer connects categorical scenarios as continuous curves. The latest manuscript is a self-contained research paper rather than a revision-history memo.
+\end{enumerate}
+
+\section*{Still outstanding before submission}
+\begin{enumerate}
+\item Execute and independently test the specified controlled-preparation amplitude and complex-Pauli Hadamard circuits in a circuit simulator or on a device if claiming \emph{implemented quantum circuits}; this revision makes no such claim.
+\item Obtain a permanent repository revision/DOI and verify that the provided code runs on a fresh machine. Include precise historical dependency versions, immutable MATPOWER source revisions, and machine metadata if quantitative timing claims are to be emphasized. The supplied dependency snapshot describes the current packaging environment, not necessarily the original timing environment.
+\item Obtain external audit of the directed-decimal interval checker and of the native-limit evaluations before describing the numerical flags as third-party verified.
+\item The authors must finalize author names, affiliations, funding/competing-interest declarations and any required disclosure of computational assistance. No author approvals or repository DOI have been invented.
+\end{enumerate}
+\paragraph{Publication positioning.} The strongest supported contribution is a \emph{negative feasibility/certification benchmark of a reconstructed-output implementation}, not a novel quantum power-flow solver or general claim that quantum computation cannot provide benefits.
+\end{document}

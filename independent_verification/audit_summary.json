@@ -1,0 +1,10 @@
+{
+  "quantum_outcomes_rechecked": 24,
+  "agreement_flags": 24,
+  "quantum_nine_accepted": 3,
+  "quantum_fourteen_accepted": 0,
+  "classical_root_scenarios_confirmed": 8,
+  "originality_gate": "not confirmed; candidate integration and negative feasibility study only",
+  "external_peer_audit_completed": false,
+  "bound_shot_allocation_directed_rounding_completed": false
+}

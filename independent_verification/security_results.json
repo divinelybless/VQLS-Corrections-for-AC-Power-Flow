@@ -1,0 +1,184 @@
+[
+  {
+    "rel": "1E-7",
+    "strict_inclusion": true,
+    "voltage_min_margin_pu": "0.06",
+    "all_voltages_safe": true,
+    "all_branches_safe": true,
+    "min_branch_margin_mva": "80.3501458100917718583626230",
+    "branches": [
+      {
+        "edge": [
+          1,
+          4
+        ],
+        "margin_sq_pu2": "5.609525201938623802765661203",
+        "mva_margin_lower": "169.9703306228636105560330899",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          4,
+          5
+        ],
+        "margin_sq_pu2": "6.090598339076828915244454931",
+        "mva_margin_lower": "210.0748624394140521884890989",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          5,
+          6
+        ],
+        "margin_sq_pu2": "1.809056160683541742608175502",
+        "mva_margin_lower": "83.59639773954591720730815370",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          3,
+          6
+        ],
+        "margin_sq_pu2": "8.127113429099875427297435504",
+        "mva_margin_lower": "206.5716011643074034693202753",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          6,
+          7
+        ],
+        "margin_sq_pu2": "2.091603453883075327535737071",
+        "mva_margin_lower": "110.2009364284880852846113409",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          7,
+          8
+        ],
+        "margin_sq_pu2": "5.561370425295731789522175644",
+        "mva_margin_lower": "167.0162922794921020722380323",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          8,
+          2
+        ],
+        "margin_sq_pu2": "3.371892697334287760867992023",
+        "mva_margin_lower": "80.3501458100917718583626230",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          8,
+          9
+        ],
+        "margin_sq_pu2": "5.442956888093292982212398414",
+        "mva_margin_lower": "160.1644217524756499223074405",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          9,
+          4
+        ],
+        "margin_sq_pu2": "5.851111691552702192042810963",
+        "mva_margin_lower": "186.8423948801652384917737120",
+        "both_ends_pass": true
+      }
+    ]
+  },
+  {
+    "rel": "0.000001",
+    "strict_inclusion": true,
+    "voltage_min_margin_pu": "0.06",
+    "all_voltages_safe": true,
+    "all_branches_safe": true,
+    "min_branch_margin_mva": "80.3478287608648679222713737",
+    "branches": [
+      {
+        "edge": [
+          1,
+          4
+        ],
+        "margin_sq_pu2": "5.609462616781369905756473334",
+        "mva_margin_lower": "169.9664205961878714722289783",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          4,
+          5
+        ],
+        "margin_sq_pu2": "6.090561744423604272118415392",
+        "mva_margin_lower": "210.0702797935678332304658459",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          5,
+          6
+        ],
+        "margin_sq_pu2": "1.809029918868857313177577477",
+        "mva_margin_lower": "83.59442183587716952566905034",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          3,
+          6
+        ],
+        "margin_sq_pu2": "8.127059047196090562139475778",
+        "mva_margin_lower": "206.5686908577264214591948451",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          6,
+          7
+        ],
+        "margin_sq_pu2": "2.091568174030829393664828969",
+        "mva_margin_lower": "110.1965044287350804620536209",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          7,
+          8
+        ],
+        "margin_sq_pu2": "5.561326469926186039888508632",
+        "mva_margin_lower": "167.0136438880574802646847998",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          8,
+          2
+        ],
+        "margin_sq_pu2": "3.371814079384717030409758419",
+        "mva_margin_lower": "80.3478287608648679222713737",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          8,
+          9
+        ],
+        "margin_sq_pu2": "5.442929560840652465582831567",
+        "mva_margin_lower": "160.1629008059951028331080448",
+        "both_ends_pass": true
+      },
+      {
+        "edge": [
+          9,
+          4
+        ],
+        "margin_sq_pu2": "5.851041728138825536095105367",
+        "mva_margin_lower": "186.8368563273506419195147761",
+        "both_ends_pass": true
+      }
+    ]
+  }
+]

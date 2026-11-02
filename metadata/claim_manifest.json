@@ -1,0 +1,51 @@
+[
+  {
+    "claim": "24 fixed-seed trial root-inclusion observations: IEEE9 3/12, IEEE14 0/12",
+    "basis": "archived trial outputs and separate checker",
+    "files": [
+      "archived_study/results.json",
+      "independent_verification/full_scenario_audit.json"
+    ]
+  },
+  {
+    "claim": "3 successful case9 small-uncertainty native security screens",
+    "basis": "separate checker + rated-branch interval screen",
+    "files": [
+      "independent_verification/full_scenario_audit.json",
+      "independent_verification/security_results.json"
+    ]
+  },
+  {
+    "claim": "18 stressed numerical reference roots outside largest tested boxes, 3 IEEE14 base inside but no inclusion, 3 accepted",
+    "basis": "deterministic diagnostic from archive, not a formal exclusion result",
+    "files": [
+      "trial_level_geometry.csv",
+      "geometry_summary.json",
+      "diagnostics.json"
+    ]
+  },
+  {
+    "claim": "Numerator/denominator/amplitude ideal sampler reproduces analytic means and variance",
+    "basis": "280 Monte Carlo replications of 1600 ideal outcomes per observable at fixed test states",
+    "files": [
+      "oracle_sampler_check.json",
+      "validate_ideal_oracle.py"
+    ]
+  },
+  {
+    "claim": "Cost illustration 2.40--2.56 million ideal samples/trial, no observed quantum gain",
+    "basis": "archived training and holdout budget; historical sparse LU timings",
+    "files": [
+      "archived_study/deps/run_multiseed.py",
+      "archived_study/results.json"
+    ]
+  },
+  {
+    "claim": "Separate decimal checker agreement on inclusion flags",
+    "basis": "internally separate arithmetic implementation, not external audited",
+    "files": [
+      "independent_verification/independent_decimal_krawczyk.py",
+      "independent_verification/full_scenario_audit.json"
+    ]
+  }
+]

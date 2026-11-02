@@ -1,0 +1,5 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and the exact tagged GitHub revision used; a DOI has not yet been assigned."
+title: "Reconstructed VQLS Corrections for AC Power Flow: Reproducibility Archive"
+type: software
+repository-code: "https://github.com/divinelybless/VQLS-Corrections-for-AC-Power-Flow"

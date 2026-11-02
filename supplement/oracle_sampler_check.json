@@ -1,0 +1,70 @@
+{
+  "IEEE9": {
+    "n": 1600,
+    "repetitions": 280,
+    "Pauli_terms_M": 200,
+    "Pauli_terms_K": 136,
+    "imaginary_coeff_M": 88,
+    "gamma_M": 2.946160857621175,
+    "gamma_K": 2.6331451301195328,
+    "numerator": {
+      "true": 0.718042209823262,
+      "empirical_mean": 0.7193498919012272,
+      "standard_error_of_empirical_mean": 0.004268938681223121,
+      "mean_zscore": 0.3063248679858304,
+      "empirical_single_batch_variance": 0.005101078115603681,
+      "theoretical_single_batch_variance": 0.00510267448993204
+    },
+    "denominator": {
+      "true": 0.5828204900581838,
+      "empirical_mean": 0.5835237690139893,
+      "standard_error_of_empirical_mean": 0.0038364364372610272,
+      "mean_zscore": 0.18331568039937626,
+      "empirical_single_batch_variance": 0.004546628405383706,
+      "theoretical_single_batch_variance": 0.004121108470400344
+    },
+    "amplitude_coordinate_0": {
+      "true": -0.3536247962681752,
+      "empirical_mean": -0.3541383928571428,
+      "standard_error_of_empirical_mean": 0.0013975021590389434,
+      "mean_zscore": 0.3675104082277771,
+      "empirical_single_batch_variance": 0.0006124550171210959,
+      "theoretical_single_batch_variance": 0.0005468434396651823
+    },
+    "note": "All random draws generated from analytic ideal-outcome probabilities; not measured through gates"
+  },
+  "IEEE14": {
+    "n": 1600,
+    "repetitions": 280,
+    "Pauli_terms_M": 864,
+    "Pauli_terms_K": 528,
+    "imaginary_coeff_M": 416,
+    "gamma_M": 3.8597598615804043,
+    "gamma_K": 2.558928700415832,
+    "numerator": {
+      "true": 0.5535061103175086,
+      "empirical_mean": 0.5482582110525237,
+      "standard_error_of_empirical_mean": 0.0057070165881000405,
+      "mean_zscore": 0.91955213095535,
+      "empirical_single_batch_variance": 0.010611877769148985,
+      "theoretical_single_batch_variance": 0.009119610734317727
+    },
+    "denominator": {
+      "true": 0.43249171528101815,
+      "empirical_mean": 0.438684915288698,
+      "standard_error_of_empirical_mean": 0.00376813087488143,
+      "mean_zscore": 1.6435734886397078,
+      "empirical_single_batch_variance": 0.0038059823331660775,
+      "theoretical_single_batch_variance": 0.003975666881265713
+    },
+    "amplitude_coordinate_0": {
+      "true": -0.10084335415354488,
+      "empirical_mean": -0.10207589285714284,
+      "standard_error_of_empirical_mean": 0.0014864196391255952,
+      "mean_zscore": 0.8291996897477882,
+      "empirical_single_batch_variance": 0.0005321391569060422,
+      "theoretical_single_batch_variance": 0.0006186441362019142
+    },
+    "note": "All random draws generated from analytic ideal-outcome probabilities; not measured through gates"
+  }
+}

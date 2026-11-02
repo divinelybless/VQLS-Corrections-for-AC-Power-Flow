@@ -1,0 +1,745 @@
+[
+  {
+    "network": "IEEE9",
+    "scenario": "base",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": true,
+        "independent_accepted": true,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": true,
+            "min_margin": "0.0001560426432170366811283352202",
+            "max_row": "0.3154402219019401369291885202",
+            "native_voltage_safe": true,
+            "both_end_branches_safe": true,
+            "branch_margin_MVA_lower": "80.3501458100917718583626230"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": true,
+        "independent_accepted": true,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": true,
+            "min_margin": "0.0001881830662574173894066082969",
+            "max_row": "0.3154425713626245540881500998",
+            "native_voltage_safe": true,
+            "both_end_branches_safe": true,
+            "branch_margin_MVA_lower": "80.2236984878191518781363421"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": true,
+        "independent_accepted": true,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": true,
+            "min_margin": "0.0001207196302313110780458420144",
+            "max_row": "0.3154482470661530752353606605",
+            "native_voltage_safe": true,
+            "both_end_branches_safe": true,
+            "branch_margin_MVA_lower": "80.3399876747954630470378915"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": [
+      {
+        "radius": "0.0001",
+        "inclusion": true,
+        "min_margin": "0.00009522647732477578380503825661"
+      }
+    ]
+  },
+  {
+    "network": "IEEE9",
+    "scenario": "load20",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.006644254593301810616709998529",
+            "max_row": "0.3161646566657391873277486977"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.006009605237577964634747066870",
+            "max_row": "0.6325614033627599898238716996"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.007343585864380808286967414429",
+            "max_row": "1.266097587858528609228327500"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.006844850470907859784999408634",
+            "max_row": "0.3163289648941334657512692047"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.006210653967888400819909429652",
+            "max_row": "0.6328902149722152272848177618"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.007346602383318933153738624307",
+            "max_row": "1.266756007164833846542282541"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.005462029147829058123040341784",
+            "max_row": "0.3161240742747292041369465899"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.004827111684502906568815588485",
+            "max_row": "0.6324801106492058289839785466"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.007407012162688591430944925132",
+            "max_row": "1.265934482009327134601262459"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": [
+      {
+        "radius": "0.0001",
+        "inclusion": false,
+        "min_margin": "-0.08932427641794547689767592319"
+      },
+      {
+        "radius": "0.0003",
+        "inclusion": false,
+        "min_margin": "-0.08914158364423125218972717763"
+      },
+      {
+        "radius": "0.001",
+        "inclusion": false,
+        "min_margin": "-0.08863845633040675865443593326"
+      },
+      {
+        "radius": "0.003",
+        "inclusion": false,
+        "min_margin": "-0.08837009576978655385516583991"
+      }
+    ]
+  },
+  {
+    "network": "IEEE9",
+    "scenario": "outage_4_5",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.1759076848701555160005350829",
+            "max_row": "15.60148841775715370414855795"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.1999083007893511994294229790",
+            "max_row": "16.30094951527713799503691100"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.2542108375280848163026933634",
+            "max_row": "17.70089754742750514306351956"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.1614245027829070392057386036",
+            "max_row": "15.60729614523636970663160284"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.1854334534236654365785668397",
+            "max_row": "16.30663161953765064425854679"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.2397515176709600714731328692",
+            "max_row": "17.70632651765126447122361162"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.1505721955913744540131503287",
+            "max_row": "15.58192719564875167822182465"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.1745419178571403663060162229",
+            "max_row": "16.28087101974634660339954375"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.2287780008771822176952259090",
+            "max_row": "17.67978267988014853323471955"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": [
+      {
+        "radius": "0.0001",
+        "inclusion": false,
+        "min_margin": "-1.510722931031078646011675817"
+      },
+      {
+        "radius": "0.0003",
+        "inclusion": false,
+        "min_margin": "-1.513623801958741952235806557"
+      },
+      {
+        "radius": "0.001",
+        "inclusion": false,
+        "min_margin": "-1.524088964074226196637158387"
+      },
+      {
+        "radius": "0.003",
+        "inclusion": false,
+        "min_margin": "-1.556666558064050086141248014"
+      }
+    ]
+  },
+  {
+    "network": "IEEE9",
+    "scenario": "load10_outage_9_4",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.2954196302939533119654321097",
+            "max_row": "16.70391823776798912504394040"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.3212094380732978785211169700",
+            "max_row": "17.44856171199885008108359031"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.3794970117419787202496131135",
+            "max_row": "18.93887646744623199529115239"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.3255118067725578937665032144",
+            "max_row": "16.71445998155476135756596489"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.3513238498004796141185473341",
+            "max_row": "17.46124433341795412946435568"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.4096751877403335614623400020",
+            "max_row": "18.95584515668463495536428917"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0015",
+            "strict": false,
+            "min_margin": "-0.3146482073660866367513960106",
+            "max_row": "16.70693231050139232051576892"
+          },
+          {
+            "radius": "0.003",
+            "strict": false,
+            "min_margin": "-0.3404455746543857185346528581",
+            "max_row": "17.45258858468372342134350029"
+          },
+          {
+            "radius": "0.006",
+            "strict": false,
+            "min_margin": "-0.3987573942473225092151400088",
+            "max_row": "18.94493089116466015741960859"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": [
+      {
+        "radius": "0.0001",
+        "inclusion": false,
+        "min_margin": "-4.351814486905346300583788189"
+      },
+      {
+        "radius": "0.0003",
+        "inclusion": false,
+        "min_margin": "-4.355697713609289546464716548"
+      },
+      {
+        "radius": "0.001",
+        "inclusion": false,
+        "min_margin": "-4.369705444514578086298462225"
+      },
+      {
+        "radius": "0.003",
+        "inclusion": false,
+        "min_margin": "-4.413298605840034549891705635"
+      }
+    ]
+  },
+  {
+    "network": "IEEE14",
+    "scenario": "base",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "min_margin": "-0.0002473119898570244522419493926",
+            "max_row": "0.7011361996941728345779540034"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "min_margin": "-0.002780357780775564893075929020",
+            "max_row": "1.403060331769773313003888340"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "min_margin": "-0.01846613733712912096158302296",
+            "max_row": "2.809795203677308827874751795"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "min_margin": "-0.0002283982740026736011528297518",
+            "max_row": "0.7011144754203325002638105266"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "min_margin": "-0.002872543783856193604454321419",
+            "max_row": "1.403020742439162785485295067"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "min_margin": "-0.01855764529979927096936972419",
+            "max_row": "2.809724677801079142594513718"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "min_margin": "-0.0002699045194800040206910873210",
+            "max_row": "0.7011308573127676962916741422"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "min_margin": "-0.002847536273415194594323165554",
+            "max_row": "1.403049443019202043510395104"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "min_margin": "-0.01853284880613825680276187152",
+            "max_row": "2.809775096488932759290586084"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": [
+      {
+        "radius": "0.0001",
+        "inclusion": true,
+        "min_margin": "0.00008935571960711465062104139115"
+      }
+    ]
+  },
+  {
+    "network": "IEEE14",
+    "scenario": "load20",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "min_margin": "-0.003044462054841217683948477072",
+            "max_row": "0.7013989603301714046456491144"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "min_margin": "-0.003811750297926164643422237506",
+            "max_row": "1.403607522565476592415105690"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "min_margin": "-0.01905389985810381292796503209",
+            "max_row": "2.810897026441884211423674837"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "min_margin": "-0.002199291022617030155979491024",
+            "max_row": "0.7013983823048617646722201696"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "min_margin": "-0.003991980058413391091879408048",
+            "max_row": "1.403611048118803503562510497"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "min_margin": "-0.01905785933282898982732982868",
+            "max_row": "2.810936222799709477026374648"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "agreement": true,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "min_margin": "-0.003269269607779401742980088530",
+            "max_row": "0.7014077471264478438877302661"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "min_margin": "-0.003987131044196757871471038477",
+            "max_row": "1.403624217516698015222756179"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "min_margin": "-0.01905422452625621977363312533",
+            "max_row": "2.810950433024493269406249411"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": [
+      {
+        "radius": "0.0001",
+        "inclusion": false,
+        "min_margin": "-0.06441018695585044986761860094"
+      },
+      {
+        "radius": "0.0003",
+        "inclusion": false,
+        "min_margin": "-0.06423291340891575472861655468"
+      },
+      {
+        "radius": "0.001",
+        "inclusion": false,
+        "min_margin": "-0.06379140590431260612966731851"
+      },
+      {
+        "radius": "0.003",
+        "inclusion": false,
+        "min_margin": "-0.06406457581675421568911716144"
+      }
+    ]
+  },
+  {
+    "network": "IEEE14",
+    "scenario": "outage_1_2",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "margin": "-0.4291230829188743736096127023",
+            "max_row": "6.211273616355090682005433892"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "margin": "-0.4480101165168743661488359355",
+            "max_row": "7.383043527777543848847363581"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "margin": "-0.5033957555272438943275125151",
+            "max_row": "9.730085664925724742291339751"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "margin": "-0.4526311432091312726478508028",
+            "max_row": "6.233980365034480456473240996"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "margin": "-0.4715938549061912628213665767",
+            "max_row": "7.409532521929238262939775271"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "margin": "-0.5271854400938863040757704312",
+            "max_row": "9.763924779734123256910273084"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "margin": "-0.3537830804783933576148725859",
+            "max_row": "6.201666675311040576568047409"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "margin": "-0.3726240983751454117811238576",
+            "max_row": "7.369036917005931121534278047"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "margin": "-0.4278463494179304929511697825",
+            "max_row": "9.706743562781473677771731516"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": []
+  },
+  {
+    "network": "IEEE14",
+    "scenario": "load10_outage_5_6",
+    "quantum_trials": [
+      {
+        "seed": 711,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "margin": "-0.09075731094960861243269671279",
+            "max_row": "6.132035057192530716026124759"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "margin": "-0.1099080692097752218827276814",
+            "max_row": "7.396169180629587248019256100"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "margin": "-0.1672223357398479256643036173",
+            "max_row": "9.929511243322064002167221644"
+          }
+        ]
+      },
+      {
+        "seed": 713,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "margin": "-0.07776093848474467840984466072",
+            "max_row": "6.122355341926578678602694239"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "margin": "-0.09688480828092563096244990599",
+            "max_row": "7.385951630199479849822396177"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "margin": "-0.1541379382563797400319950094",
+            "max_row": "9.918288812645150831865708425"
+          }
+        ]
+      },
+      {
+        "seed": 717,
+        "archive_accepted": false,
+        "independent_accepted": false,
+        "checks": [
+          {
+            "radius": "0.0025",
+            "strict": false,
+            "margin": "-0.09358723304656371146827689286",
+            "max_row": "6.140834625671650108249305609"
+          },
+          {
+            "radius": "0.005",
+            "strict": false,
+            "margin": "-0.1127639510723481903033845732",
+            "max_row": "7.405760917992720821146188878"
+          },
+          {
+            "radius": "0.01",
+            "strict": false,
+            "margin": "-0.1701423855695456858006518152",
+            "max_row": "9.940723908716109960299818639"
+          }
+        ]
+      }
+    ],
+    "classical_root_radius_test": []
+  }
+]

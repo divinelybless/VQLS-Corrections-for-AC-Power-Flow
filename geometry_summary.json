@@ -1,0 +1,38 @@
+{
+  "class_counts": {
+    "IEEE9 base": {
+      "accepted_root_enclosure": 3
+    },
+    "IEEE9 load20": {
+      "reference_root_outside_all_tested_boxes": 3
+    },
+    "IEEE9 outage_4_5": {
+      "reference_root_outside_all_tested_boxes": 3
+    },
+    "IEEE9 load10_outage_9_4": {
+      "reference_root_outside_all_tested_boxes": 3
+    },
+    "IEEE14 base": {
+      "reference_root_inside_largest_box_but_no_inclusion": 3
+    },
+    "IEEE14 load20": {
+      "reference_root_outside_all_tested_boxes": 3
+    },
+    "IEEE14 outage_1_2": {
+      "reference_root_outside_all_tested_boxes": 3
+    },
+    "IEEE14 load10_outage_5_6": {
+      "reference_root_outside_all_tested_boxes": 3
+    }
+  },
+  "observed_inclusion": 3,
+  "outside_reference_box": 18,
+  "inside_largest_failed": 3,
+  "total": 24,
+  "residual_above_rhs": 0,
+  "radii": {
+    "IEEE9": 0.006,
+    "IEEE14": 0.01
+  },
+  "classification_caveat": "Numerical nominal reference roots; not an exclusion of other nonlinear roots and not a rigorous root nonexistence conclusion"
+}
