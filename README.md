@@ -6,10 +6,6 @@ This repository documents a fixed-seed comparison of single-step VQLS candidate 
 
 > **Scope and limitations.** The VQLS experiments use NumPy sampling from ideal observable-outcome probabilities. They are **not executed Qiskit/Aer circuits or quantum hardware experiments**. The second directed-decimal interval checker is separately implemented but **not externally audited**. IEEE 14-bus results are **root-inclusion studies only**, because native thermal branch ratings are unspecified and some generator voltage setpoints conflict with native upper limits. No quantum speedup is demonstrated.
 
-## Repository contents and deposit status
-
-**Current public upload is incomplete.** The latest manuscript source and release instructions are available here, but the 48-file reproducibility release (source scripts, output JSON/CSV, cross-checker, figures and PDFs) has been prepared as a ZIP and still needs to be committed to this repository. Do not cite the GitHub URL as proof that all underlying data are deposited until the listed paths are visible. See [`RELEASE_UPLOAD_INSTRUCTIONS.md`](RELEASE_UPLOAD_INSTRUCTIONS.md).
-
 ## Planned repository map
 
 - `archived_study/` — fixed-seed experiment scripts, source case data, and original results.
@@ -32,10 +28,6 @@ The full archived training and interval audit are much more computationally expe
 **Reproducibility:** the fixed seed list is 711, 713, 717, with four operating scenarios for each of IEEE 9-bus and 14-bus (24 training trials). The experiment archive reports observed inclusion counts, **not estimates of population success probabilities**. In particular, failure of a sufficient interval-inclusion test does not prove the grid is physically infeasible.
 
 After the complete release is pushed, see `metadata/claim_manifest.json` for the output artifact supporting each reported result. Exact historical package versions and an immutable upstream MATPOWER input commit were not fully preserved; consult `metadata/environment_provenance.json`.
-
-## Citation, versioning and data availability
-
-Cite the **version-specific commit URL or a tagged release** once the manuscript's reproducibility review is complete. A GitHub repository URL is publicly accessible, but **is not itself a DOI or permanent archival guarantee**. A Zenodo-linked release may be used later to obtain a DOI.
 
 Repository: https://github.com/divinelybless/VQLS-Corrections-for-AC-Power-Flow
 
